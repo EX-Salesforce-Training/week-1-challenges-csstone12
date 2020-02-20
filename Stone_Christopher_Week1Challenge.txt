@@ -1,0 +1,26 @@
+`/* Challenge One
+ * Authors - Ivan and Chris
+Create a class called ChallengeOne
+Declare three variables at the top of the class
+An Integer, String, and Account. Do not assign them values to them yet.
+Declare two methods with the following signatures:
+public void SetValues(){}
+public void GetValues(){}
+In SetVaues assign values to the Integer and String variable and initialize the Account variable. Then assign the account.Name a value.
+In GetValues print to the debug log each of the variables.
+*/
+public class ChallengeOne {
+    Integer chInt;
+    String chStr;
+    Account chAcc;
+    public void SetValues() {
+        chInt = 68;
+        chStr = 'Perfidy';
+        chAcc = new Account();
+        chAcc.Name = 'Peter\'s Account';
+    }
+    public void GetValues() {
+        system.debug('chInt: ' + chInt + '\nchStr: ' + chStr
+            + '\nchAcc: ' + chAcc.Name);
+    }
+}

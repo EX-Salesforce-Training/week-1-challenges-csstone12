@@ -1,0 +1,24 @@
+/* Challenge Three
+ * Authors - Ivan and Chris
+Create a class called ChallengeThree.
+Declare an Account variable.
+Create two methods with the following signatures:
+public void SetAccount(){}
+public void GetAccount(){}
+SetAccount should initialize the account, and assign values to name,
+annualrevenue, and description.
+GetAccount should print the account to the debug log.
+*/
+public class ChallengeThree {
+    Account acc;
+    public void SetAccount() {
+        acc = new Account();
+        acc.Name = 'Bill\'s Account';
+        acc.AnnualRevenue = 1000000;
+        acc.Description = 'A spherical area 800m in diameter';
+    }
+    public void GetAccount() {
+        system.debug('Account: ' + acc.Name + '\nAnnual Revenue: '
+            + acc.AnnualRevenue + '\nDescription: ' + acc.Description);
+    }
+}

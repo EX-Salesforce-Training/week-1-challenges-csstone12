@@ -1,0 +1,44 @@
+/* Challenge Two
+ * Authors - Ivan and Chris
+Create a class called ChallengeTwo.
+With the ChallengeTwo class create three methods with the following signatures:
+public void ForLoop(){}
+public void WhileLoop(){}
+public void Iffy(){}
+In the ForLoop method create and initialize an Integer List that contains 1-10. 
+Using a for each loop iterate through the list and print to the debug each value in the list.
+In the WhileLoop method declare an integer variable called I and assign it a value of 0. 
+Using a while loop interate until I has a value of 10.
+In the Iffy method check if a value is true, and if false check if another value is true. 
+In both if blocks print to the debug log a string. 
+The criteria should be such that the code skips the first if block, 
+and prints the string from the second if block.
+*/
+public class ChallengeTwo {
+    public void ForLoop(){
+        List<integer> intList = new List<integer>{1,2,3,4,5,6,7,8,9,10};
+        
+            for (integer i : intList){
+                system.debug(i);
+            }
+    }
+    
+	public void WhileLoop(){
+        integer i = 0;
+        while (i < 10){
+            i++;
+        }
+    }
+    
+	public void Iffy(){
+        integer i = 1;
+        
+        if (i==2){
+            system.debug('Math is broken');
+        }
+        else if (i==1){
+            system.debug('All is well');
+        }
+    }
+
+}
